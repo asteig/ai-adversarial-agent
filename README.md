@@ -110,7 +110,11 @@ def max_value(self, state, alpha, beta):
 
 ## Experiment Results
 
-| Strategy      | Player 1      | Player 2  |
+Part of my assignment was to test the effectiveness of my search techniques against the provided agents. Each agent uses a strategy covered in class to try and win the game. My task was to find additional strategies that would ultimately win the game, or determine why those strategies are ineffective.
+
+Below is a table showing the average % win after 1000 games played, once as Player 1 and once as Player 2. My agent was particularly effective when playing against the GREEDY algorithm by choosing moves that reduce the amount of moves available to the opponent. My solution also did well playing against the agent using random moves, winning 82.6% as Player 1 and 79.3% as Player 2.
+
+|               | Player 1      | Player 2  |
 | ------------- |:-------------:| -----:|
 | MINIMAX       | 39.5%         | 24.1% |
 | GREEDY        | 100%          | 100%  |
