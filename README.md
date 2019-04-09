@@ -108,40 +108,6 @@ def max_value(self, state, alpha, beta):
     return v
 ```
 
-## Custom Helper Functions
-
-### Get mirrors
-```python
-def get_mirrors(self, ind):
-
-    mirrors = []
-
-    board_center_x = math.ceil(_WIDTH / 2)
-    board_center_x = math.ceil(_WIDTH / 2)
-
-    x, y = self.ind2xy(ind)
-
-    mirror_x = _WIDTH - x - 1
-
-    mirrors.append(self.xy2ind(mirror_x, y))
-
-    mirror_y = _HEIGHT - y - 1
-
-    mirrors.append(self.xy2ind(x, mirror_y))
-    mirrors.append(self.xy2ind(mirror_x, mirror_y))
-
-    return mirrors
-```
-
-### Get Distance to Bounds
-```python
-def distance_to_bounds(self, ind):
-
-    x, y = (ind % (_WIDTH + 2), ind // (_WIDTH + 2))
-
-    return math.sqrt(x**2 + y**2)
-```
-
 ## Experiment Results
 
 | Strategy      | Player 1      | Player 2  |
