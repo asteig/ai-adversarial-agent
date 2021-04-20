@@ -2,10 +2,6 @@
 
 ![Example game of isolation on a square board](viz.gif)
 
-I created a custom player class that plays a version of Knight's isolation. During the completion of the project, I learned about advanced heuristics and opening book techniques that can be used to give the agent an advantage over its opponents. 
-
-In this project, I experimented with different adversarial search techniques by building an agent to play knights Isolation. Unlike classic Isolation where players control tokens that move like chess queens, this version of Isolation gives each agent control over a single token that moves in L-shaped movements--like a knight in chess.
-
 # My Custom Player
 I created a custom player class to create an agent that can complete a game against itself and the agents provided as a baseline by the assignment. In the score function, I use a combination of techniques covered by the lectures to predict the best move for the agent to play next. Each method returns a value used to rank all possible moves against each other. With experimentation, I was able to find which methods worked well and which methods didn't work well at all.
 
